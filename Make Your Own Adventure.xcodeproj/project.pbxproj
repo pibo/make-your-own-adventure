@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9811D0E921AC350F00482720 /* HauntedHouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E521AC350E00482720 /* HauntedHouse.plist */; };
+		9811D0EA21AC350F00482720 /* Tiger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E621AC350F00482720 /* Tiger.plist */; };
+		9811D0EB21AC350F00482720 /* Harp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E721AC350F00482720 /* Harp.plist */; };
+		9811D0EC21AC350F00482720 /* Stranger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E821AC350F00482720 /* Stranger.plist */; };
 		98B70DD8218E24550007DD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B70DD7218E24550007DD31 /* AppDelegate.swift */; };
 		98B70DDA218E24550007DD31 /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B70DD9218E24550007DD31 /* MYOAViewController.swift */; };
 		98B70DDD218E24550007DD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B70DDB218E24550007DD31 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9811D0E521AC350E00482720 /* HauntedHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HauntedHouse.plist; sourceTree = "<group>"; };
+		9811D0E621AC350F00482720 /* Tiger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tiger.plist; sourceTree = "<group>"; };
+		9811D0E721AC350F00482720 /* Harp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Harp.plist; sourceTree = "<group>"; };
+		9811D0E821AC350F00482720 /* Stranger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stranger.plist; sourceTree = "<group>"; };
 		98B70DD4218E24550007DD31 /* Make Your Own Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Make Your Own Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B70DD7218E24550007DD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98B70DD9218E24550007DD31 /* MYOAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9811D0ED21AC353700482720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98B70DE3218E24560007DD31 /* Info.plist */,
+				9811D0E721AC350F00482720 /* Harp.plist */,
+				9811D0E521AC350E00482720 /* HauntedHouse.plist */,
+				9811D0E821AC350F00482720 /* Stranger.plist */,
+				9811D0E621AC350F00482720 /* Tiger.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		98B70DCB218E24550007DD31 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +77,9 @@
 				98B70DD7218E24550007DD31 /* AppDelegate.swift */,
 				98B70DD9218E24550007DD31 /* MYOAViewController.swift */,
 				98B70DDB218E24550007DD31 /* Main.storyboard */,
-				98B70DDE218E24560007DD31 /* Assets.xcassets */,
 				98B70DE0218E24560007DD31 /* LaunchScreen.storyboard */,
-				98B70DE3218E24560007DD31 /* Info.plist */,
+				98B70DDE218E24560007DD31 /* Assets.xcassets */,
+				9811D0ED21AC353700482720 /* Supporting Files */,
 			);
 			path = "Make Your Own Adventure";
 			sourceTree = "<group>";
@@ -123,8 +143,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B70DE2218E24560007DD31 /* LaunchScreen.storyboard in Resources */,
+				9811D0E921AC350F00482720 /* HauntedHouse.plist in Resources */,
 				98B70DDF218E24560007DD31 /* Assets.xcassets in Resources */,
+				9811D0EB21AC350F00482720 /* Harp.plist in Resources */,
+				9811D0EC21AC350F00482720 /* Stranger.plist in Resources */,
 				98B70DDD218E24550007DD31 /* Main.storyboard in Resources */,
+				9811D0EA21AC350F00482720 /* Tiger.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

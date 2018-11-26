@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>credits</key>
+	<dict>
+		<key>id</key>
+		<string>harp</string>
+		<key>author</key>
+		<string>Daniel Stern</string>
+		<key>image</key>
+		<string>Harp</string>
+		<key>source</key>
+		<string>https://danielstern.github.io/cyo/</string>
+		<key>title</key>
+		<string>The Sound of the Harp</string>
+	</dict>
+	<key>nodes</key>
+	<array>
+		<dict>
+			<key>prompts</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<integer>1</integer>
+					<key>message</key>
+					<string>Wait to get rescued?</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<integer>2</integer>
+					<key>message</key>
+					<string>Explore the dungeon?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You awake in a castle dungeon.\n&quot;You will never get out of here,&quot; says Smeemog, the clumsy Dragon.\n&quot;I will show you!&quot; you say, but deep down, you are worried he is right.</string>
+			<key>title</key>
+			<string>Page 1</string>
+		</dict>
+		<dict>
+			<key>message</key>
+			<string>Maybe if I wait, someone will come to rescue me!\n(You wait, and wait)\nBut nobody ever comes...</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<dict>
+			<key>prompts</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<integer>3</integer>
+					<key>message</key>
+					<string>Walk through the door?</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<string>4</string>
+					<key>message</key>
+					<string>Talk to the bird?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>I know I can find a way out!\nYou notice an open door and a wandering bird.</string>
+			<key>title</key>
+			<string>Page 3</string>
+		</dict>
+		<dict>
+			<key>message</key>
+			<string>You walk through the door and come upon a couryard and old tree with a carving on the trunk.\nThe carving depicts a horrible monster.\n&quot;A horrible monster! What a bunch of... ahh!&quot;\nYou turn around and are captured by the monster.</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<dict>
+			<key>prompts</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<integer>5</integer>
+					<key>message</key>
+					<string>Leave the harp and run?</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<integer>6</integer>
+					<key>message</key>
+					<string>Take the harp and run?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>You try talking to the bird, but it seems to ignore you.\nSuddenly, it turns around, and points towards an old tree.\nYou walk to the tree, reach inside, and pull out a harp.</string>
+			<key>title</key>
+			<string>Page 5</string>
+		</dict>
+		<dict>
+			<key>prompts</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<integer>7</integer>
+					<key>message</key>
+					<string>Introduce yourself?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>After a short time, you find an exit and a bridge connecting to the woods. As you are crossing, a fearsome troll climbs out from under the bridge.\n&quot;Who dares to cross me bridge!?!&quot; he bellows.</string>
+			<key>title</key>
+			<string>Page 6</string>
+		</dict>
+		<dict>
+			<key>prompts</key>
+			<array>
+				<dict>
+					<key>destination</key>
+					<integer>7</integer>
+					<key>message</key>
+					<string>Introduce yourself?</string>
+				</dict>
+				<dict>
+					<key>destination</key>
+					<integer>8</integer>
+					<key>message</key>
+					<string>Play the harp for the troll?</string>
+				</dict>
+			</array>
+			<key>message</key>
+			<string>After a short time, you find an exit and a bridge connecting to the woods. As you are crossing, a fearsome troll climbs out from under the bridge.\n&quot;Who dares to cross me bridge!?!&quot; he bellows.</string>
+			<key>title</key>
+			<string>Page 7</string>
+		</dict>
+		<dict>
+			<key>message</key>
+			<string>&quot;It is I,&quot; you say.\n&quot;I do not care! I demand yer bones as payment for trespassin!&quot; yells the troll.</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+		<dict>
+			<key>message</key>
+			<string>&quot;It is I, the great harpist!&quot;\nYou begin to play a hideous sounding chord that pleases the troll.\n&quot;What a wonderful song! Here, take this as payment for your performance,&quot; says the troll.\nThen, the troll hands over his treasure.</string>
+			<key>title</key>
+			<string>The End</string>
+		</dict>
+	</array>
+</dict>
+</plist>
