@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mYK-h9-xfl">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lvJ-7V-tAk">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,418 +10,155 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="vYC-hg-6Jk">
+        <!--Adventures-->
+        <scene sceneID="Y7h-vD-ETj">
             <objects>
-                <navigationController id="mYK-h9-xfl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nnd-zx-pZ7">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                <tableViewController id="q2D-3n-UIc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G4X-2g-bjU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdventureCell" textLabel="VTR-My-dlu" detailTextLabel="J6q-JU-DZ4" style="IBUITableViewCellStyleSubtitle" id="CCb-UO-oaf">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CCb-UO-oaf" id="YY2-4T-mCy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VTR-My-dlu">
+                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J6q-JU-DZ4">
+                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="32.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="q2D-3n-UIc" id="uKM-Fo-HXL"/>
+                            <outlet property="delegate" destination="q2D-3n-UIc" id="cv7-cc-WzR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Adventures" id="OmZ-qg-H4p"/>
+                    <connections>
+                        <segue destination="q9l-7w-PnO" kind="show" id="tAF-0K-IHL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCQ-Zl-DGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="478"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ryn-Rg-H3k">
+            <objects>
+                <viewController storyboardIdentifier="NodeViewController" id="q9l-7w-PnO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vB2-L5-WHI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-D4-uHX">
+                                <rect key="frame" x="16" y="80" width="382" height="389"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aNc-bm-Iqu">
+                                        <rect key="frame" x="116" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="2GF-WY-HbS"/>
+                                            <constraint firstAttribute="height" constant="150" id="y8n-5a-kr7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5uF-do-WPP">
+                                        <rect key="frame" x="0.0" y="158" width="382" height="231"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5uF-do-WPP" secondAttribute="bottom" id="Ts0-Ik-HSB"/>
+                                    <constraint firstAttribute="trailing" secondItem="5uF-do-WPP" secondAttribute="trailing" id="gct-5R-PD9"/>
+                                    <constraint firstItem="5uF-do-WPP" firstAttribute="leading" secondItem="fdi-D4-uHX" secondAttribute="leading" id="nG4-vQ-YDi"/>
+                                </constraints>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jij-Ac-OAa" userLabel="Start Over Button">
+                                <rect key="frame" x="171.66666666666666" y="674" width="71" height="30"/>
+                                <state key="normal" title="Start Over"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-dO-YGs">
+                                <rect key="frame" x="0.0" y="485" width="414" height="251"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PromptCell" textLabel="YGp-Js-KvS" detailTextLabel="ks6-HT-udo" style="IBUITableViewCellStyleValue1" id="baF-Rt-bIE">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="baF-Rt-bIE" id="Ooq-D9-JjS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YGp-Js-KvS">
+                                                    <rect key="frame" x="20.000000000000004" y="11.999999999999998" width="36.333333333333336" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ks6-HT-udo">
+                                                    <rect key="frame" x="350" y="11.999999999999998" width="44" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fdi-D4-uHX" firstAttribute="leading" secondItem="xH7-x1-zkx" secondAttribute="leading" constant="16" id="R5Y-Gh-wvX"/>
+                            <constraint firstItem="QvI-dO-YGs" firstAttribute="leading" secondItem="xH7-x1-zkx" secondAttribute="leading" id="Wlj-by-lBg"/>
+                            <constraint firstItem="xH7-x1-zkx" firstAttribute="trailing" secondItem="QvI-dO-YGs" secondAttribute="trailing" id="dlH-wd-TXW"/>
+                            <constraint firstItem="fdi-D4-uHX" firstAttribute="bottom" secondItem="QvI-dO-YGs" secondAttribute="top" constant="-16" id="e9e-bm-hP6"/>
+                            <constraint firstItem="xH7-x1-zkx" firstAttribute="trailing" secondItem="fdi-D4-uHX" secondAttribute="trailing" constant="16" id="fCJ-dY-t3B"/>
+                            <constraint firstItem="xH7-x1-zkx" firstAttribute="bottom" secondItem="jij-Ac-OAa" secondAttribute="bottom" constant="32" id="kMC-PN-DmT"/>
+                            <constraint firstItem="fdi-D4-uHX" firstAttribute="top" secondItem="xH7-x1-zkx" secondAttribute="top" constant="16" id="s07-rO-H5g"/>
+                            <constraint firstItem="jij-Ac-OAa" firstAttribute="centerX" secondItem="vB2-L5-WHI" secondAttribute="centerX" id="sd9-VS-rFD"/>
+                            <constraint firstItem="QvI-dO-YGs" firstAttribute="bottom" secondItem="xH7-x1-zkx" secondAttribute="bottom" id="wnS-80-kFB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xH7-x1-zkx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VE4-8Y-oGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.66666666666669" y="476.08695652173918"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xhd-Nz-iNn">
+            <objects>
+                <navigationController id="lvJ-7V-tAk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UGx-mr-Fo7">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="oCQ-C3-fPE" kind="relationship" relationship="rootViewController" id="jD6-JP-mg4"/>
+                        <segue destination="q2D-3n-UIc" kind="relationship" relationship="rootViewController" id="MjF-EG-c2G"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e07-pF-A2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbV-R3-Mum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="140"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="a8A-7m-xQ3">
-            <objects>
-                <viewController id="oCQ-C3-fPE" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dDd-MP-RLE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="o2k-Cq-3HO">
-                                <rect key="frame" x="16" y="575" width="343" height="76"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-z5-oEb">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Leap through the door and roar!"/>
-                                        <connections>
-                                            <segue destination="PCp-ed-MIO" kind="show" id="JRd-x8-fh2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-9P-dvn">
-                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
-                                        <state key="normal" title="Stalk to the door, peek down the hallway"/>
-                                        <connections>
-                                            <segue destination="PW4-QD-Fgt" kind="show" id="lt3-zb-h1U"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="An immense tiger wakes in an empty room.   A door opens into a hallway...  What should she do?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C3i-EM-ZGo">
-                                <rect key="frame" x="16" y="80" width="343" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="bgq-jK-Cj4" firstAttribute="trailing" secondItem="C3i-EM-ZGo" secondAttribute="trailing" constant="16" id="5T0-Xu-BM7"/>
-                            <constraint firstItem="C3i-EM-ZGo" firstAttribute="top" secondItem="bgq-jK-Cj4" secondAttribute="top" constant="16" id="VY3-N8-ins"/>
-                            <constraint firstItem="C3i-EM-ZGo" firstAttribute="leading" secondItem="bgq-jK-Cj4" secondAttribute="leading" constant="16" id="XrI-K3-Od1"/>
-                            <constraint firstItem="bgq-jK-Cj4" firstAttribute="bottom" secondItem="o2k-Cq-3HO" secondAttribute="bottom" constant="16" id="ZvP-FC-vPD"/>
-                            <constraint firstItem="o2k-Cq-3HO" firstAttribute="leading" secondItem="bgq-jK-Cj4" secondAttribute="leading" constant="16" id="vYN-gi-vrY"/>
-                            <constraint firstItem="bgq-jK-Cj4" firstAttribute="trailing" secondItem="o2k-Cq-3HO" secondAttribute="trailing" constant="16" id="wHx-oz-N2S"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="bgq-jK-Cj4"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mOA-HN-GCl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7h5-ha-he7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="407" y="140"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Bcu-nx-83K">
-            <objects>
-                <viewController id="PCp-ed-MIO" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aBV-Wv-Fy7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Z-2e-dqC">
-                                <rect key="frame" x="16" y="575" width="343" height="76"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-3t-Mps">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Wait to see what happens next"/>
-                                        <connections>
-                                            <segue destination="Dsd-8Z-KAY" kind="show" id="Gdd-oY-pH1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5c-L8-wg4">
-                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
-                                        <state key="normal" title="Attack the old man!"/>
-                                        <connections>
-                                            <segue destination="hTh-iZ-3ih" kind="show" id="SkM-dO-fdN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NF8-uE-L0c">
-                                <rect key="frame" x="16" y="80" width="343" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">An old man is startled out of his chair. But he recovers, and aims his rifle right at the tiger with a smile.   What should she do?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="NF8-uE-L0c" firstAttribute="leading" secondItem="cW8-wf-6cS" secondAttribute="leading" constant="16" id="EVc-7O-WYZ"/>
-                            <constraint firstItem="cW8-wf-6cS" firstAttribute="trailing" secondItem="NF8-uE-L0c" secondAttribute="trailing" constant="16" id="MP6-bb-NrJ"/>
-                            <constraint firstItem="NF8-uE-L0c" firstAttribute="top" secondItem="cW8-wf-6cS" secondAttribute="top" constant="16" id="Mt2-Bt-FVO"/>
-                            <constraint firstItem="Y2Z-2e-dqC" firstAttribute="leading" secondItem="cW8-wf-6cS" secondAttribute="leading" constant="16" id="Nkc-TP-KGu"/>
-                            <constraint firstItem="cW8-wf-6cS" firstAttribute="bottom" secondItem="Y2Z-2e-dqC" secondAttribute="bottom" constant="16" id="asz-5v-SwS"/>
-                            <constraint firstItem="cW8-wf-6cS" firstAttribute="trailing" secondItem="Y2Z-2e-dqC" secondAttribute="trailing" constant="16" id="esp-WL-Ef8"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cW8-wf-6cS"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="CPp-WX-OGo"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0aE-uL-160" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1238" y="-505"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TRN-o2-xih">
-            <objects>
-                <viewController id="Dsd-8Z-KAY" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q1o-fX-OyI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="The old man offers a delicious raw steak, which the tiger eats.   She wakes in a room, without an open door." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1bg-fB-sht">
-                                <rect key="frame" x="16" y="80" width="343" height="159.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="1bg-fB-sht" firstAttribute="leading" secondItem="8OY-oJ-Ak7" secondAttribute="leading" constant="16" id="IFb-ni-SZN"/>
-                            <constraint firstItem="1bg-fB-sht" firstAttribute="top" secondItem="8OY-oJ-Ak7" secondAttribute="top" constant="16" id="ku1-RS-GmU"/>
-                            <constraint firstItem="8OY-oJ-Ak7" firstAttribute="trailing" secondItem="1bg-fB-sht" secondAttribute="trailing" constant="16" id="sEb-WX-xWI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="8OY-oJ-Ak7"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IsX-rJ-uvC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcv-ms-tHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2102" y="-1256"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wMw-YI-eGH">
-            <objects>
-                <viewController id="hTh-iZ-3ih" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sa8-xG-uDA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Unblinking, the man fires his rifle, and a dart stings the Tiger.   She wakes in the room, but the door is now closed." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tnl-Ca-93Q">
-                                <rect key="frame" x="16" y="80" width="343" height="159.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="wqf-wT-RG3" firstAttribute="trailing" secondItem="Tnl-Ca-93Q" secondAttribute="trailing" constant="16" id="9ZK-PC-K2E"/>
-                            <constraint firstItem="Tnl-Ca-93Q" firstAttribute="top" secondItem="wqf-wT-RG3" secondAttribute="top" constant="16" id="O0u-fP-aBZ"/>
-                            <constraint firstItem="Tnl-Ca-93Q" firstAttribute="leading" secondItem="wqf-wT-RG3" secondAttribute="leading" constant="16" id="s3M-s7-W18"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="wqf-wT-RG3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="slz-F7-zOr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wGa-DG-VeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2102" y="-345"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dvv-Ms-gsK">
-            <objects>
-                <viewController id="ehZ-dr-txa" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="R4T-w4-cQE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-ne-8m1">
-                                <rect key="frame" x="16" y="80" width="343" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">There is mayhem. And cries, and eventually a hail of darts.   When it is over, the tiger wakes again in a room, without an open door. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="URa-UC-HSr" firstAttribute="trailing" secondItem="YMf-ne-8m1" secondAttribute="trailing" constant="16" id="htc-cG-nap"/>
-                            <constraint firstItem="YMf-ne-8m1" firstAttribute="top" secondItem="URa-UC-HSr" secondAttribute="top" constant="16" id="j3r-hn-hUh"/>
-                            <constraint firstItem="YMf-ne-8m1" firstAttribute="leading" secondItem="URa-UC-HSr" secondAttribute="leading" constant="16" id="kDE-8P-JDI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="URa-UC-HSr"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3a9-dJ-z4u"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nVe-77-yaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2102" y="395"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LeB-zo-dbC">
-            <objects>
-                <viewController id="PW4-QD-Fgt" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="heQ-eO-GVy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xgY-1Z-EQu">
-                                <rect key="frame" x="16" y="575" width="343" height="76"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9J-Ag-CI4">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Attack the old man!"/>
-                                        <connections>
-                                            <segue destination="ehZ-dr-txa" kind="show" id="R19-FD-gwX"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd6-1t-89i">
-                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
-                                        <state key="normal" title="Pad quitely down the hallway"/>
-                                        <connections>
-                                            <segue destination="nab-V8-cy3" kind="show" id="4wz-VS-M7k"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="An old man sleeps on a chair in the hallway. He has a rifle. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="igV-P2-WoJ">
-                                <rect key="frame" x="16" y="80" width="343" height="73.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hpJ-cy-Cq3" firstAttribute="bottom" secondItem="xgY-1Z-EQu" secondAttribute="bottom" constant="16" id="DFa-FN-bGQ"/>
-                            <constraint firstItem="hpJ-cy-Cq3" firstAttribute="trailing" secondItem="igV-P2-WoJ" secondAttribute="trailing" constant="16" id="DMW-MY-izd"/>
-                            <constraint firstItem="hpJ-cy-Cq3" firstAttribute="trailing" secondItem="xgY-1Z-EQu" secondAttribute="trailing" constant="16" id="FCC-6Y-yJw"/>
-                            <constraint firstItem="xgY-1Z-EQu" firstAttribute="leading" secondItem="hpJ-cy-Cq3" secondAttribute="leading" constant="16" id="uWy-mu-S0R"/>
-                            <constraint firstItem="igV-P2-WoJ" firstAttribute="top" secondItem="hpJ-cy-Cq3" secondAttribute="top" constant="16" id="wAh-ei-YTG"/>
-                            <constraint firstItem="igV-P2-WoJ" firstAttribute="leading" secondItem="hpJ-cy-Cq3" secondAttribute="leading" constant="16" id="xMc-nm-gf0"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hpJ-cy-Cq3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mHZ-3P-9y9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Fy-2K-K22" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1238" y="993"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="j67-Vx-lrx">
-            <objects>
-                <viewController id="yEK-bj-fNt" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K0T-8J-DlV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-aP-cMy">
-                                <rect key="frame" x="16" y="575" width="343" height="76"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0Y-PS-o15">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Attack the old man!"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-yl-gep">
-                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
-                                        <state key="normal" title="Pad quitely down the hallway"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="An old man sleeps on a chair in the hallway. He has a rifle. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Z-lw-auh">
-                                <rect key="frame" x="16" y="36" width="343" height="73.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Q7Z-lw-auh" firstAttribute="top" secondItem="yld-YZ-fOu" secondAttribute="top" constant="16" id="BLH-hd-L2a"/>
-                            <constraint firstItem="Q7Z-lw-auh" firstAttribute="leading" secondItem="yld-YZ-fOu" secondAttribute="leading" constant="16" id="Ch9-db-Nd9"/>
-                            <constraint firstItem="Ghj-aP-cMy" firstAttribute="leading" secondItem="yld-YZ-fOu" secondAttribute="leading" constant="16" id="ChP-6O-XR9"/>
-                            <constraint firstItem="yld-YZ-fOu" firstAttribute="trailing" secondItem="Q7Z-lw-auh" secondAttribute="trailing" constant="16" id="NeJ-no-GFN"/>
-                            <constraint firstItem="yld-YZ-fOu" firstAttribute="bottom" secondItem="Ghj-aP-cMy" secondAttribute="bottom" constant="16" id="g8L-sH-T0E"/>
-                            <constraint firstItem="yld-YZ-fOu" firstAttribute="trailing" secondItem="Ghj-aP-cMy" secondAttribute="trailing" constant="16" id="mRc-oL-dr5"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yld-YZ-fOu"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0nF-mF-bPO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G7n-Zy-LCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2102" y="1328"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iLO-4F-qQ8">
-            <objects>
-                <viewController id="nab-V8-cy3" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wu2-Fm-Ilj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="eAc-33-xjG">
-                                <rect key="frame" x="16" y="575" width="343" height="76"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVS-iR-Qkc">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Check out the kitchen"/>
-                                        <connections>
-                                            <segue destination="epO-2p-E67" kind="show" id="UfZ-u1-SdE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TX-Ck-YVt">
-                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
-                                        <state key="normal" title="Try for the forest"/>
-                                        <connections>
-                                            <segue destination="vla-X9-3Jg" kind="show" id="uWF-IP-bZX"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="At the end of the hallway there are two doors.   One smells like a kitchen, the other smells like the tiger's native forest." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z6j-iA-lrQ">
-                                <rect key="frame" x="16" y="80" width="343" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="CFO-aq-ZWD" firstAttribute="trailing" secondItem="eAc-33-xjG" secondAttribute="trailing" constant="16" id="5bY-Pw-35g"/>
-                            <constraint firstItem="CFO-aq-ZWD" firstAttribute="bottom" secondItem="eAc-33-xjG" secondAttribute="bottom" constant="16" id="DFh-c8-J0k"/>
-                            <constraint firstItem="eAc-33-xjG" firstAttribute="leading" secondItem="CFO-aq-ZWD" secondAttribute="leading" constant="16" id="NQs-5n-wve"/>
-                            <constraint firstItem="Z6j-iA-lrQ" firstAttribute="leading" secondItem="CFO-aq-ZWD" secondAttribute="leading" constant="16" id="i4r-f3-YfM"/>
-                            <constraint firstItem="Z6j-iA-lrQ" firstAttribute="top" secondItem="CFO-aq-ZWD" secondAttribute="top" constant="16" id="pCQ-xJ-dyJ"/>
-                            <constraint firstItem="CFO-aq-ZWD" firstAttribute="trailing" secondItem="Z6j-iA-lrQ" secondAttribute="trailing" constant="16" id="v01-rn-AMl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="CFO-aq-ZWD"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="tQH-tA-1U1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cVh-bK-t5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2102" y="1328"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xfn-PD-I3W">
-            <objects>
-                <viewController id="epO-2p-E67" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rMi-Wj-stN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-E6-ZUg">
-                                <rect key="frame" x="16" y="80" width="343" height="188"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">It is a kitchen, and there is a bowl with a delicious raw steak.   She eats the steak, and wake later in a room, without an open door.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="KeS-E6-ZUg" firstAttribute="leading" secondItem="HCf-aK-ECV" secondAttribute="leading" constant="16" id="1ME-Ae-E4t"/>
-                            <constraint firstItem="KeS-E6-ZUg" firstAttribute="top" secondItem="HCf-aK-ECV" secondAttribute="top" constant="16" id="24S-gs-Jjg"/>
-                            <constraint firstItem="HCf-aK-ECV" firstAttribute="trailing" secondItem="KeS-E6-ZUg" secondAttribute="trailing" constant="16" id="QfX-xx-bJ3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="HCf-aK-ECV"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8sA-FU-J46"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kys-ZU-t5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3127" y="915"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="OBV-aQ-xBI">
-            <objects>
-                <viewController id="vla-X9-3Jg" customClass="MYOAViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hy7-QS-KVy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="The door opens to a dense forest.   The tiger pads in. She knows no humans can follow." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-dc-MKz">
-                                <rect key="frame" x="16" y="80" width="343" height="159.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="X5e-QI-ZUP" firstAttribute="trailing" secondItem="D5O-dc-MKz" secondAttribute="trailing" constant="16" id="S6l-5H-Wzt"/>
-                            <constraint firstItem="D5O-dc-MKz" firstAttribute="leading" secondItem="X5e-QI-ZUP" secondAttribute="leading" constant="16" id="gI1-17-OXk"/>
-                            <constraint firstItem="D5O-dc-MKz" firstAttribute="top" secondItem="X5e-QI-ZUP" secondAttribute="top" constant="16" id="mKs-aw-6Q1"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="X5e-QI-ZUP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="W8S-De-vxA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SLC-sf-M3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3127" y="1739"/>
+            <point key="canvasLocation" x="-1364" y="478"/>
         </scene>
     </scenes>
 </document>
