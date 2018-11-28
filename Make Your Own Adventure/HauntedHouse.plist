@@ -23,7 +23,7 @@
 				<dict>
 					<key>destination</key>
 					<integer>1</integer>
-					<key>prompt</key>
+					<key>message</key>
 					<string>Go inside?</string>
 				</dict>
 				<dict>
