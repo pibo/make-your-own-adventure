@@ -19,6 +19,6 @@ struct Prompt {
     
     init(dictionary: PromptDictionary, nodes: [Node]) {
         message = dictionary["message"] as! String
-        destination = nodes[dictionary["destination"] as! Int]
+        destination = nodes[dictionary["destination"]!.integerValue]
     }
 }
