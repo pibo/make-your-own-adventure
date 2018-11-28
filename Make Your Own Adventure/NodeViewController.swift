@@ -33,9 +33,10 @@ class NodeViewController: UIViewController, UITableViewDelegate, UITableViewData
         textView.text = node.message
         
         // Control dynamic items visibility.
-        let atRoot = node === adventure.nodes.first
+        
         startOverButton.isHidden = !node.prompts.isEmpty
         
+        let atRoot = node === adventure.nodes.first
         if atRoot {
             creditsContainer.isHidden = false
             creditsTitle.text = adventure.credits.title
