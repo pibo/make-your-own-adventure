@@ -12,7 +12,7 @@
 		9811D0EB21AC350F00482720 /* Harp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E721AC350F00482720 /* Harp.plist */; };
 		9811D0EC21AC350F00482720 /* Stranger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9811D0E821AC350F00482720 /* Stranger.plist */; };
 		98B70DD8218E24550007DD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B70DD7218E24550007DD31 /* AppDelegate.swift */; };
-		98B70DDA218E24550007DD31 /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B70DD9218E24550007DD31 /* MYOAViewController.swift */; };
+		98B70DDA218E24550007DD31 /* NewAdventureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B70DD9218E24550007DD31 /* NewAdventureViewController.swift */; };
 		98B70DDD218E24550007DD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B70DDB218E24550007DD31 /* Main.storyboard */; };
 		98B70DDF218E24560007DD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B70DDE218E24560007DD31 /* Assets.xcassets */; };
 		98B70DE2218E24560007DD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B70DE0218E24560007DD31 /* LaunchScreen.storyboard */; };
@@ -30,7 +30,7 @@
 		9811D0E821AC350F00482720 /* Stranger.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stranger.plist; sourceTree = "<group>"; };
 		98B70DD4218E24550007DD31 /* Make Your Own Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Make Your Own Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B70DD7218E24550007DD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98B70DD9218E24550007DD31 /* MYOAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
+		98B70DD9218E24550007DD31 /* NewAdventureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdventureViewController.swift; sourceTree = "<group>"; };
 		98B70DDC218E24550007DD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98B70DDE218E24560007DD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B70DE1218E24560007DD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				98B70DD7218E24550007DD31 /* AppDelegate.swift */,
-				98B70DD9218E24550007DD31 /* MYOAViewController.swift */,
+				98B70DD9218E24550007DD31 /* NewAdventureViewController.swift */,
 				98B70DDB218E24550007DD31 /* Main.storyboard */,
 				98B70DE0218E24560007DD31 /* LaunchScreen.storyboard */,
 				98B70DDE218E24560007DD31 /* Assets.xcassets */,
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B70DDA218E24550007DD31 /* MYOAViewController.swift in Sources */,
+				98B70DDA218E24550007DD31 /* NewAdventureViewController.swift in Sources */,
 				98E2E72721ADD191007FCC06 /* Adventure.swift in Sources */,
 				98E2E72A21ADD501007FCC06 /* Credits.swift in Sources */,
 				98E2E73021ADDB07007FCC06 /* Types.swift in Sources */,
