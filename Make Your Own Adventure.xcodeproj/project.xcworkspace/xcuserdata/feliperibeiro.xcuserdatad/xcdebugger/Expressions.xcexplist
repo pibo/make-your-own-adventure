@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "NodeViewController.viewDidLoad():NodeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "!node.prompts.isEmpty">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Prompt.init(dictionary:nodes:):Prompt.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

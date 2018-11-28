@@ -50,4 +50,14 @@ class NewAdventureViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let adventure = adventures[indexPath.row]
+        
+        let controller = storyboard?.instantiateViewController(withIdentifier: "NodeViewController") as! NodeViewController
+        controller.adventure = adventure
+        controller.node = adventure.nodes.first
+        
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }

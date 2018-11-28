@@ -14,29 +14,29 @@
         <scene sceneID="Y7h-vD-ETj">
             <objects>
                 <tableViewController id="q2D-3n-UIc" customClass="NewAdventureViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G4X-2g-bjU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G4X-2g-bjU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdventureCell" textLabel="VTR-My-dlu" detailTextLabel="J6q-JU-DZ4" style="IBUITableViewCellStyleSubtitle" id="CCb-UO-oaf">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AdventureCell" textLabel="VTR-My-dlu" detailTextLabel="J6q-JU-DZ4" style="IBUITableViewCellStyleSubtitle" id="CCb-UO-oaf">
+                                <rect key="frame" x="0.0" y="28" width="414" height="96"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CCb-UO-oaf" id="YY2-4T-mCy">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="95.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VTR-My-dlu">
-                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VTR-My-dlu">
+                                            <rect key="frame" x="20.000000000000004" y="28" width="33.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J6q-JU-DZ4">
-                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="32.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="19.999999999999996" y="51.333333333333329" width="32.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-407" y="478"/>
         </scene>
-        <!--View Controller-->
+        <!--Node View Controller-->
         <scene sceneID="ryn-Rg-H3k">
             <objects>
-                <viewController storyboardIdentifier="NodeViewController" id="q9l-7w-PnO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NodeViewController" id="q9l-7w-PnO" customClass="NodeViewController" customModule="Make_Your_Own_Adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vB2-L5-WHI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,13 +79,13 @@
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4mX-iT-StR" userLabel="Credits Container">
                                         <rect key="frame" x="145" y="154" width="92" height="8"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3z-Xy-Hlz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3z-Xy-Hlz">
                                                 <rect key="frame" x="7.6666666666666572" y="0.0" width="76.666666666666671" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wq-jl-Htf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wq-jl-Htf">
                                                 <rect key="frame" x="20.333333333333339" y="4" width="51.666666666666657" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -94,6 +94,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPs-S8-iKy">
                                                 <rect key="frame" x="0.0" y="8" width="92" height="0.0"/>
                                                 <state key="normal" title="Read Original"/>
+                                                <connections>
+                                                    <action selector="readOriginal" destination="q9l-7w-PnO" eventType="touchUpInside" id="gbZ-HK-JKc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -111,11 +114,7 @@
                                     <constraint firstItem="5uF-do-WPP" firstAttribute="leading" secondItem="fdi-D4-uHX" secondAttribute="leading" id="nG4-vQ-YDi"/>
                                 </constraints>
                             </stackView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jij-Ac-OAa" userLabel="Start Over Button">
-                                <rect key="frame" x="171.66666666666666" y="485" width="71" height="30"/>
-                                <state key="normal" title="Start Over"/>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-dO-YGs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-dO-YGs">
                                 <rect key="frame" x="0.0" y="485" width="414" height="251"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -123,7 +122,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="baF-Rt-bIE" id="Ooq-D9-JjS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YGp-Js-KvS">
@@ -133,7 +132,7 @@
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ks6-HT-udo">
+                                                <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ks6-HT-udo">
                                                     <rect key="frame" x="350" y="11.999999999999998" width="44" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,7 +143,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="q9l-7w-PnO" id="yAl-v4-cgq"/>
+                                    <outlet property="delegate" destination="q9l-7w-PnO" id="BvI-Zo-Xci"/>
+                                </connections>
                             </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jij-Ac-OAa" userLabel="Start Over Button">
+                                <rect key="frame" x="171.66666666666666" y="485" width="71" height="30"/>
+                                <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOver" destination="q9l-7w-PnO" eventType="touchUpInside" id="DTy-5j-Gpd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -160,6 +170,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xH7-x1-zkx"/>
                     </view>
+                    <connections>
+                        <outlet property="creditsAuthor" destination="1wq-jl-Htf" id="MvI-rS-8rM"/>
+                        <outlet property="creditsContainer" destination="4mX-iT-StR" id="h3p-Qh-HZf"/>
+                        <outlet property="creditsTitle" destination="v3z-Xy-Hlz" id="Zh3-mE-Txc"/>
+                        <outlet property="imageView" destination="aNc-bm-Iqu" id="dTa-GT-npZ"/>
+                        <outlet property="startOverButton" destination="jij-Ac-OAa" id="UGI-op-ag7"/>
+                        <outlet property="tableView" destination="QvI-dO-YGs" id="Rxd-tm-fTg"/>
+                        <outlet property="textView" destination="5uF-do-WPP" id="1DK-D7-2EV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VE4-8Y-oGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

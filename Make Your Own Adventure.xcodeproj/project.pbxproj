@@ -21,6 +21,7 @@
 		98E2E72C21ADD645007FCC06 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E2E72B21ADD645007FCC06 /* Prompt.swift */; };
 		98E2E72E21ADD803007FCC06 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E2E72D21ADD803007FCC06 /* Node.swift */; };
 		98E2E73021ADDB07007FCC06 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E2E72F21ADDB07007FCC06 /* Types.swift */; };
+		98E2E75021AECA9A007FCC06 /* NodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E2E74F21AECA9A007FCC06 /* NodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		98E2E72B21ADD645007FCC06 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 		98E2E72D21ADD803007FCC06 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		98E2E72F21ADDB07007FCC06 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		98E2E74F21AECA9A007FCC06 /* NodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				98B70DD7218E24550007DD31 /* AppDelegate.swift */,
 				98B70DD9218E24550007DD31 /* NewAdventureViewController.swift */,
+				98E2E74F21AECA9A007FCC06 /* NodeViewController.swift */,
 				98B70DDB218E24550007DD31 /* Main.storyboard */,
 				98B70DE0218E24560007DD31 /* LaunchScreen.storyboard */,
 				98B70DDE218E24560007DD31 /* Assets.xcassets */,
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E2E75021AECA9A007FCC06 /* NodeViewController.swift in Sources */,
 				98B70DDA218E24550007DD31 /* NewAdventureViewController.swift in Sources */,
 				98E2E72721ADD191007FCC06 /* Adventure.swift in Sources */,
 				98E2E72A21ADD501007FCC06 /* Credits.swift in Sources */,
